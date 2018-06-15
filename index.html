@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<title>Foodecisive</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Foodecisive Text Section) */
+.bgimg-1 {
+    background-image: url('https://lh3.googleusercontent.com/u/0/d/1LVZhMijNwuy7fvKVHLuR3QdftAaxBhnU=s3200-k-iv1');
+    /* background-image: url('https://d39l2hkdp2esp1.cloudfront.net/img/photo/140991/140991_00_2x.jpg?20180302040152'); */
+    height: 500px;
+
+}
+
+/* Second image (Restaurant Options Text Section) */
+.bgimg-2 {
+    background-image: url("https://d39l2hkdp2esp1.cloudfront.net/img/photo/140991/140991_00_2x.jpg?20180302040152");
+    min-height: 200px;
+
+}
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> MISSION STATEMENT</a>
+    <a href="index_two.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> RESTAURANT OPTIONS</a>
+    <!--<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>-->
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">MISSION STATEMENT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">RESTAURANT OPTIONS</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">FOODECISIVE<span class="w3-hide-small"></span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+
+  <h3 class="w3-center"><b>MISSION STATEMENT</b></h3>
+  <p class="w3-center"><em>We make the tough decisions for you!</em></p>
+  <p>Foodecisive is a revolutionizing website seeking to transform the lives of couples and individuals living in Denver and Boulder, Colorado who are indecisive of where to eat. By entering the city, dietary restrictions, and desired price into the restaurant generator, multiple restaurants will be recommended based on the information provided.</p>
+  <div class="w3-row">
+    <div class="w3 m6 w3-center w3-padding-left">
+      <div class="w3-row-padding w3-center">
+        <div class= "w3 m6 w3-center w3-padding-right">
+
+              <div class="w3-col m3">
+                <img src="http://www.frankthephotographer.com/food-photography/restaurant-photographer/sergiosW1/calzone1bsm.jpg" style="width:210px" hspace="24" onclick="onClick(this)" class="w3-hover-opacity" alt="Italian">
+              </div>
+
+              <div class="w3-col m3">
+                <img src="http://www.frankthephotographer.com/food-photography/restaurant-photographer/Moti-Mahal/fish-csm.jpg" style="width:200px " hspace="24" onclick="onClick(this)" class="w3-hover-opacity" alt="Italian">
+              </div>
+
+              <div class="w3-col m3">
+                <img src="http://www.frankthephotographer.com/food-photography/restaurant-photographer/planet-hollywood/chow-main-beefsm.jpg" style="width:200px" hspace="24"onclick="onClick(this)" class="w3-hover-opacity" alt="Italian">
+              </div>
+
+              <div class="w3-col m3">
+                <img src="http://www.frankthephotographer.com/food-photography/restaurant-photographer/spice-6/15sm.jpg" style="width:200px" hspace="24" onclick="onClick(this)" class="w3-hover-opacity" alt="Italian">
+              </div>
+
+              <div class="w3-col m3">
+                <img src="https://www.publicdomainpictures.net/pictures/30000/velka/plain-white-background.jpg" style="width:400px" hspace="24" onclick="onClick(this)" class="w3-hover-opacity" alt="Italian">
+              </div>
+
+              </div>
+        </div>
+     </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">RESTAURANT OPTIONS<span class="w3-hide-small"></span>
+  </div>
+</div>
+
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center"><a href="index_two.html">CLICK HERE</a></h3>
+</div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+
+</body>
+</html>
