@@ -68,25 +68,35 @@ body, html {
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">SURVEY</h3>
+  <h3 class="w3-center"><b>SURVEY</b></h3>
   <form action=="/new_recipes" method="post">
-    <p> Check all the boxes below that describe your dietary restrictions, flavor, and location. </p>
-    <input type="checkbox" class="ccs-checkbox" id="checkbox_pink" name="option" value="gluten_free">
-    <label for="checkbox_pink" class="cca-label">Example </label>
-    <input type="checkbox" class="ccs-checkbox" id="checkbox_pink" name="option" value="vegan">
-    <label for="checkbox_pink" class="cca-label">Example </label><br/>
-    <p>Example question</p>
-    <input type="checkbox" class="ccs-checkbox" id="checkbox_pink" name="option" value="gluten_free">
-    <label for="checkbox_pink" class="cca-label">Example </label>
-    <input type="checkbox" class="ccs-checkbox" id="checkbox_pink" name="option" value="vegan">
-    <label for="checkbox_pink" class="cca-label">Example  </label><br/>
-    <p>Example question</p>
-    <input type="checkbox" class="ccs-checkbox" id="checkbox_pink" name="option" value="gluten_free">
-    <label for="checkbox_pink" class="cca-label">Example  </label>
-    <input type="checkbox" class="ccs-checkbox" id="checkbox_pink" name="option" value="vegan">
-    <label for="checkbox_pink" class="cca-label">Example  </label><br/>
+    <h4> Check all the boxes below that describe what you are looking for:</h4>
+    <h5><u>Location</u></h5>
+    <input type="checkbox" class="ccs-checkbox" name="option" value="Denver">
+    <label>Denver, Colorado </label>
+    <input type="checkbox" class="ccs-checkbox" name="option" value="Boulder">
+    <label>Boulder, Colorado </label><br/>
+    <h5><u>Dietary Restrictions</u></h5>
+    <input type="checkbox" class="ccs-checkbox" name="option" value="Vegan">
+    <label>Vegan</label>
+    <input type="checkbox" class="ccs-checkbox" name="option" value="Vegetarian">
+    <label>Vegetarian</label>
+    <input type="checkbox" class="ccs-checkbox" name="option" value="Gluten Free">
+    <label>Gluten Free</label>
+    <input type="checkbox" class="ccs-checkbox" name="option" value="Dairy Free">
+    <label>Dairy Free</label>
+    <input type="checkbox" class="ccs-checkbox" name="option" value="None">
+    <label>None</label></br>
+    <h5><u>Price Range</u></h5>
+    <input type="checkbox" class="ccs-checkbox" name="option" value="Cheap">
+    <label>$</label>
+    <input type="checkbox" class="ccs-checkbox" name="option" value="Medium">
+    <label>$$</label>
+    <input type="checkbox" class="ccs-checkbox" name="option" value="Expensive">
+    <label>$$$</label></br>
 
-    <button size= "100" color="white"><p><a href="index_three.html">SUBMIT</a></p></button>
+    <br><h3 class="w3-center"><button style="height:50px;width:150px"><a href="index_three.html">SUBMIT</a></button></h3>
+    <!-- <br><button size= "100" color="white"><p><a href="index_three.html">SUBMIT</a></p></button> -->
 
   </form>
 
